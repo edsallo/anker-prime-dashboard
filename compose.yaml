@@ -1,7 +1,7 @@
 services:
   anker:
     build: .
-    image: anker-prime-autonomous:1.0.0
+    image: anker-prime-autonomous:1.1.0
     restart: unless-stopped
     init: true
     user: "1000:1000"

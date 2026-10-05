@@ -8,6 +8,16 @@ Default external port: **80**. The application listens on **8080 inside the cont
 
 The dashboard currently uses Russian labels. Installation and project documentation are available in English and Russian. This is an unofficial community integration, not an Anker product.
 
+## Experimental Anker settings and cloud profiles (1.1.0)
+
+Settings → Тестовые exposes Maximum Compatibility, Custom Charging Mode enablement and Charging Device Identification. The A2345-specific identification endpoint is used; the older identity flag does not represent this model's current setting. Identification cannot be enabled while compatibility is on.
+
+The Profiles Anker button beside charging mode loads profiles from the account. Save current limits/protocols into a free slot (maximum four), rename, change auto-exit, overwrite with current limits, apply or delete with confirmation. Saving a profile does not apply it; applying sends the complete profile/protocols and waits for device confirmation. Saved profiles are shared with the official app.
+
+The identification switch is implemented; decoded recognized-device names in port cards are **not yet implemented**. View those names in the official app. No reliable identifier-to-model mapping has been verified yet.
+
+Live verification: cloud settings changed and restored; a temporary cloud profile created, updated and removed; original profile preserved. Automated tests also cover correct A2345 endpoints, compatibility dependency, protocol preservation and profile limits.
+
 ## Purpose
 
 See which ports are charging, compare voltage/current/power, change supported charger settings, distribute a power budget and review usage history from a phone or computer browser. The server continues collecting history while the browser is closed. Each installation maintains its own history and energy counters.

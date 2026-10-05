@@ -3,3 +3,4 @@ data/
 .env
 *.tgz
 .DS_Store
+._*
