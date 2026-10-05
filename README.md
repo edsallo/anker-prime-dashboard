@@ -80,6 +80,7 @@ sudo docker compose version
 ### 3. Download this public repository
 
 ~~~bash
+sudo apt install -y git
 git clone https://github.com/edsallo/anker-prime-dashboard.git
 cd anker-prime-dashboard
 cp .env.example .env
