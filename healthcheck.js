@@ -1,0 +1,1 @@
+const origin=(process.env.SITE_ORIGINS||'http://localhost').split(',')[0].trim();const req=require('node:http').get({host:'127.0.0.1',port:process.env.PORT||8080,path:'/api/status',headers:{Host:new URL(origin).host}},res=>{res.resume();process.exitCode=res.statusCode===200?0:1;});req.on('error',()=>process.exitCode=1);req.setTimeout(4000,()=>req.destroy());

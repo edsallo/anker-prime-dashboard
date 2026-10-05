@@ -1,0 +1,1 @@
+{"name":"anker-prime-autonomous","version":"1.0.0","private":true,"description":"Standalone Anker Prime A2345 cloud dashboard","license":"MIT","scripts":{"start":"node server.js","test":"node --test test/*.test.js"},"engines":{"node":">=22"},"dependencies":{"mqtt":"5.15.0"}}
