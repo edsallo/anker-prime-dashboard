@@ -252,3 +252,5 @@ Tests cover protocol fixtures, command acknowledgements, cloud-session refresh, 
 Only A2345 is discovered as supported. Cloud API and firmware behavior are undocumented and may change. Internet is required; this is not an offline LAN API. Display features depend on firmware/cloud support. Homey Flow/Insights/widgets are not part of this standalone site. Mains energy measurement and forced fixed voltage are not included.
 
 MIT license: see LICENSE and THIRD_PARTY.md. Anker/product names belong to their respective owners.
+
+Disconnected ports (inactive, zero voltage and zero power) display dashes for voltage/current. Raw telemetry and energy calculations remain unchanged.
