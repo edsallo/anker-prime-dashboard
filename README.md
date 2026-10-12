@@ -14,7 +14,7 @@ Settings → Тестовые exposes Maximum Compatibility, Custom Charging Mod
 
 The Profiles Anker button beside charging mode loads profiles from the account. Save current limits/protocols into a free slot (maximum four), rename, change auto-exit, overwrite with current limits, apply or delete with confirmation. Saving a profile does not apply it; applying sends the complete profile/protocols and waits for device confirmation. Saved profiles are shared with the official app.
 
-The identification switch is implemented; decoded recognized-device names in port cards are **not yet implemented**. View those names in the official app. No reliable identifier-to-model mapping has been verified yet.
+USB-C port cards show manufacturer and model/series using a hybrid lookup: local user entries, the Anker Power 3.24.3 model table, and VID/PID mappings verified with connected devices. Click **Уточнить / Указать модель** to save a manufacturer and model locally for that VID/PID on any USB-C port of the charger. Personal names remain attached to ports under Settings → Названия. Unknown or disconnected devices do not retain a previous model name. A valid VID/PID is required for manual model entries; VID/PID identifies a product, not an individual phone. User entries remain on this server and are not submitted to Anker or a public database.
 
 Live verification: cloud settings changed and restored; a temporary cloud profile created, updated and removed; original profile preserved. Automated tests also cover correct A2345 endpoints, compatibility dependency, protocol preservation and profile limits.
 

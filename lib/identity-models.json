@@ -1,0 +1,196 @@
+{
+  "source": {
+    "package": "com.anker.charging",
+    "version": "3.24.3",
+    "build": 237,
+    "table": "DeviceBrandModelMapping; object pool 0xd3898",
+    "base_apk_sha256": "27986f94a992f3aac1189be746d310553e99909ed81dfbb1abd5880f71662110"
+  },
+  "brands": {
+    "1": "Apple",
+    "2": "Samsung",
+    "3": "Xiaomi",
+    "4": "Huawei",
+    "5": "Google",
+    "6": "LG",
+    "7": "IDT",
+    "8": "TI",
+    "9": "YBZ",
+    "10": "Anker",
+    "11": "Honor",
+    "12": "HP",
+    "13": "Dell",
+    "14": "Lenovo",
+    "15": "Microsoft",
+    "16": "ASUS",
+    "17": "ASUS",
+    "18": "MSI",
+    "19": "Razer"
+  },
+  "models": {
+    "1": {
+      "1": "iPhone 12 {SERIES}",
+      "2": "iPhone 12 mini",
+      "3": "iPhone 12",
+      "4": "iPhone 12 Pro",
+      "5": "iPhone 12 Pro Max",
+      "6": "iPhone SE 3",
+      "7": "iPhone 13 {SERIES}",
+      "8": "iPhone 13 mini",
+      "9": "iPhone 13",
+      "10": "iPhone 13 Pro",
+      "11": "iPhone 13 Pro Max",
+      "12": "iPhone 14 {SERIES}",
+      "13": "iPhone 14",
+      "14": "iPhone 14 Pro",
+      "15": "iPhone 14 Plus",
+      "16": "iPhone 14 Pro Max",
+      "17": "iPhone 15",
+      "18": "iPhone 15 Plus",
+      "19": "iPhone 15 Pro",
+      "20": "iPhone 15 Pro Max",
+      "21": "iPhone 16 {SERIES}",
+      "22": "iPhone 16",
+      "23": "iPhone 16 Plus",
+      "24": "iPhone 16e",
+      "25": "iPhone 16 Pro {SERIES}",
+      "26": "iPhone 16 Pro",
+      "27": "iPhone 16 Pro Max",
+      "28": "iPhone 17 {SERIES}",
+      "29": "iPhone 17",
+      "30": "iPhone Air",
+      "31": "iPhone 17 Pro {SERIES}",
+      "32": "iPhone 17 Pro",
+      "33": "iPhone 17 Pro Max",
+      "34": "iPad 9 (2021)",
+      "35": "iPad 10 (2022)",
+      "36": "iPad 11 (2025)",
+      "37": "iPad Air 4 (2020)",
+      "38": "iPad Air 5 (2022)",
+      "39": "iPad Air 11\" (2024)",
+      "40": "iPad Air 13\" (2024)",
+      "41": "iPad Air 11\" (2025)",
+      "42": "iPad Air 13\" (2025)",
+      "43": "iPad mini 6 (2021)",
+      "44": "iPad mini 7 (2024)",
+      "45": "iPad Pro 2020 {SERIES}",
+      "46": "iPad Pro 11\" (2020)",
+      "47": "iPad Pro 12.9\" (2020)",
+      "48": "iPad Pro M1 {SERIES}",
+      "49": "iPad Pro 11\" M1 (2021)",
+      "50": "iPad Pro 12.9\" M1 (2021)",
+      "51": "iPad Pro M2 {SERIES}",
+      "52": "iPad Pro 11\" M2 (2022)",
+      "53": "iPad Pro 12.9\" M2 (2022)",
+      "54": "iPad Pro M4 {SERIES}",
+      "55": "iPad Pro 11\" M4 (2024)",
+      "56": "iPad Pro 13\" M4 (2024)",
+      "57": "iPad Pro M5 {SERIES}",
+      "58": "iPad Pro 11\" M5 (2025)",
+      "59": "iPad Pro 13\" M5 (2025)",
+      "60": "MacBook Air 13\" (2020)",
+      "61": "MacBook Air 13\" M1 (2020)",
+      "62": "MacBook Pro 13.4\" (2020)",
+      "63": "MacBook Pro 13.4\" M1 (2020)",
+      "64": "MacBook Air 13\" M2 (2022)",
+      "65": "MacBook Air 13\" M3 (2024)",
+      "66": "MacBook Air 13\" M4 (2025)",
+      "67": "MacBook Air 15\" (2023)",
+      "68": "MacBook Air 15\" M3 (2024)",
+      "69": "MacBook Air 15\" M4 (2025)",
+      "70": "MacBook Pro 13\" M2 (2022)",
+      "71": "MacBook Pro 14\" M1 Pro (2021)",
+      "72": "MacBook Pro 14\" M2 Pro (2023)",
+      "73": "MacBook Pro 14\" M3 (2023)",
+      "74": "MacBook Pro 14\" M4 {SERIES}",
+      "75": "MacBook Pro 14\" M4 Pro (2024)",
+      "76": "MacBook Pro 14\" M4 Max (2024)",
+      "77": "MacBook Pro 14\" M5 (2025)",
+      "78": "MacBook Pro 16\" M1 Max (2021)",
+      "79": "MacBook Pro 16\" M2 Pro (2023)",
+      "80": "MacBook Pro 16\" M3 Pro (2023)",
+      "81": "MacBook Pro 16\" M4 {SERIES}",
+      "82": "MacBook Pro 16\" M4 Pro (2024)",
+      "83": "MacBook Pro 16\" M4 Max (2024)",
+      "84": "HomePod Mini",
+      "85": "iPhone 17e",
+      "86": "iPad Air 11\" (2026)",
+      "87": "iPad Air 13\" (2026)",
+      "88": "MacBook Air 13\" M5 (2026)",
+      "89": "MacBook Air 15\" M5 (2026)",
+      "90": "MacBook Pro 16\" M5 Pro (2026)",
+      "91": "MacBook Neo A18 Pro (2026)",
+      "92": "MacBook Pro 14\" M5 (2026)",
+      "65535": "Apple {DEVICES}"
+    },
+    "2": {
+      "65535": "Samsung {DEVICES}"
+    },
+    "3": {
+      "65535": "Xiaomi {DEVICES}"
+    },
+    "4": {
+      "65535": "Huawei {DEVICES}"
+    },
+    "5": {
+      "65535": "Google {DEVICES}"
+    },
+    "6": {
+      "65535": "LG {DEVICES}"
+    },
+    "7": {
+      "65535": "IDT {DEVICES}"
+    },
+    "8": {
+      "65535": "TI {DEVICES}"
+    },
+    "9": {
+      "65535": "YBZ {DEVICES}"
+    },
+    "10": {
+      "1": "Power Bank 26K",
+      "2": "Power Bank 20K",
+      "4": "Power Bank 5K",
+      "5": "Power Bank 10K",
+      "6": "Charging Base 150W",
+      "8": "Power Bank 27K",
+      "9": "Wireless Charger 35W",
+      "10": "Charger 160W",
+      "11": "Charger 250W",
+      "12": "Charging Station 240W",
+      "13": "Power Bank 20K"
+    },
+    "11": {
+      "65535": "Honor {DEVICES}"
+    },
+    "12": {
+      "65535": "HP {DEVICES}"
+    },
+    "13": {
+      "65535": "Dell {DEVICES}"
+    },
+    "14": {
+      "1": "ThinkBook 16 (2025)",
+      "2": "ThinkPad X1 Carbon (2025)",
+      "3": "YOGA Air 14c",
+      "4": "YOGA Pro 14s",
+      "5": "YOGA Air 15s (2025)",
+      "65535": "Lenovo {DEVICES}"
+    },
+    "15": {
+      "65535": "Microsoft {DEVICES}"
+    },
+    "16": {
+      "65535": "ASUS {DEVICES}"
+    },
+    "17": {
+      "65535": "ASUS {DEVICES}"
+    },
+    "18": {
+      "65535": "MSI {DEVICES}"
+    },
+    "19": {
+      "65535": "Razer {DEVICES}"
+    }
+  }
+}

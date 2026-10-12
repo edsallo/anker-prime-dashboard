@@ -2,3 +2,5 @@
 .settings-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px}.settings-tabs button[aria-pressed=true]{color:#14251a;background:var(--mint);border-color:var(--mint)}.a-label{overflow-wrap:anywhere}@media(max-width:600px){.overview{gap:16px;padding:20px}.total strong{font-size:48px}.allocation{padding-top:16px}.budget-bar{margin:15px 0 12px}.mode{padding-top:16px}.mode .muted{margin-top:8px}.port .limit-edit input{font-size:16px}.field input,.field select{font-size:16px}}
 .nav-history{text-decoration:none}@media(max-width:600px){.nav-history{font-size:12px}.port-bottom{gap:8px;flex-wrap:wrap}}
 @media(max-width:600px){header{height:auto;min-height:72px;padding:12px 14px;gap:6px;flex-wrap:wrap}.brand{font-size:16px;letter-spacing:1px}.brand span{font-size:7px;letter-spacing:2px;margin-left:6px}.status{gap:5px;flex-shrink:0;white-space:nowrap}.nav-history{font-size:11px;padding:8px}.quiet{flex-shrink:0}#settings-open{min-width:40px;min-height:40px}}
+
+.device-identity{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;margin:10px 0}.device-model{font-size:12px;overflow-wrap:anywhere}.energy{flex-wrap:wrap}
