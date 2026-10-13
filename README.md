@@ -254,3 +254,9 @@ Only A2345 is discovered as supported. Cloud API and firmware behavior are undoc
 MIT license: see LICENSE and THIRD_PARTY.md. Anker/product names belong to their respective owners.
 
 Disconnected ports (inactive, zero voltage and zero power) display dashes for voltage/current. Raw telemetry and energy calculations remain unchanged.
+
+## Interface / Интерфейс
+
+Светлая тема Anker по умолчанию, компактные карточки портов и пять цветовых тем. Русский и английский язык выбираются по языку браузера; ручной выбор находится в настройках. Тема и язык сохраняются в этом браузере. Вт·ч и мА·ч имеют отдельные подсказки. Значки сайта включают PNG 32×32 и вариант для закреплённых вкладок Safari.
+
+Anker light is the default, with compact port cards and five color themes. Russian/English follows the browser language and can be overridden in Settings. Language and theme are saved per browser. Wh and mAh have separate tooltips. Site icons include a 32×32 PNG and a Safari pinned-tab variant.

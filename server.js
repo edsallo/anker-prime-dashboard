@@ -2,14 +2,14 @@
 const http=require('node:http'),fs=require('node:fs'),path=require('node:path');
 function createServer(config,service,history){
  const origins=new Set(config.origins),hosts=new Set([...origins].map(o=>new URL(o).host)),attempts=new Map();
- const files={'/':'index.html','/history':'history.html','/setup':'setup.html','/app.js':'app.js','/style.css':'style.css','/history.js':'history.js','/history.css':'history.css','/setup.js':'setup.js','/setup.css':'setup.css'};
+ const files={'/anker32.png':'anker32.png','/favicon.ico':'favicon.png','/apple-touch-icon.png':'favicon.png','/safari-pinned-tab.svg':'safari-pinned-tab.svg','/favicon.png':'favicon.png','/':'index.html','/history':'history.html','/setup':'setup.html','/app.js':'app.js','/style.css':'style.css','/history.js':'history.js','/history.css':'history.css','/setup.js':'setup.js','/setup.css':'setup.css'};
  return http.createServer(async(req,res)=>{
   const send=(status,data)=>{res.writeHead(status,{'Content-Type':'application/json'});res.end(JSON.stringify(data));};
   res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Referrer-Policy','same-origin');res.setHeader('X-Frame-Options','DENY');res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
   if(!hosts.has(req.headers.host))return send(403,{error:'Unknown host'});
   if(req.headers.origin&&!origins.has(req.headers.origin))return send(403,{error:'Origin denied'});
   const url=new URL(req.url,'http://localhost');
-  if(req.method==='GET'&&files[url.pathname]){if(['/', '/history'].includes(url.pathname)&&!service.status().configured){res.writeHead(303,{Location:'/setup'});return res.end();}const file=files[url.pathname];res.writeHead(200,{'Content-Type':file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.css')?'text/css; charset=utf-8':'text/javascript; charset=utf-8'});return res.end(fs.readFileSync(path.join(__dirname,'public',file)));}
+  if((req.method==='GET'||req.method==='HEAD')&&files[url.pathname]){if(['/', '/history'].includes(url.pathname)&&!service.status().configured){res.writeHead(303,{Location:'/setup'});return res.end();}const file=files[url.pathname];res.writeHead(200,{'Content-Type':file.endsWith('.svg')?'image/svg+xml':file.endsWith('.png')?'image/png':file.endsWith('.html')?'text/html; charset=utf-8':file.endsWith('.css')?'text/css; charset=utf-8':'text/javascript; charset=utf-8',...(file.endsWith('.png')||file.endsWith('.svg')?{'Cache-Control':'public, max-age=86400'}:{})});if(req.method==='HEAD')return res.end();return res.end(fs.readFileSync(path.join(__dirname,'public',file)));}
   try{
    if(req.method==='GET'){
     if(url.pathname==='/api/status')return send(200,service.status());
