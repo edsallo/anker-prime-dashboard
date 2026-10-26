@@ -260,3 +260,11 @@ Disconnected ports (inactive, zero voltage and zero power) display dashes for vo
 Светлая тема Anker по умолчанию, компактные карточки портов и пять цветовых тем. Русский и английский язык выбираются по языку браузера; ручной выбор находится в настройках. Тема и язык сохраняются в этом браузере. Вт·ч и мА·ч имеют отдельные подсказки. Значки сайта включают PNG 32×32 и вариант для закреплённых вкладок Safari.
 
 Anker light is the default, with compact port cards and five color themes. Russian/English follows the browser language and can be overridden in Settings. Language and theme are saved per browser. Wh and mAh have separate tooltips. Site icons include a 32×32 PNG and a Safari pinned-tab variant.
+
+### Масштаб графиков и перегрев
+
+Периоды графиков включают 3 и 12 часов. Выделите мышью произвольный участок, вращайте колесо или используйте pinch на трекпаде. Горизонтальный жест сдвигает увеличенный интервал. Графики и статистика синхронно переключаются на выбранный интервал с загрузкой подробных измерений. Доступны кнопки +, − и сброс масштаба.
+
+Индикатор перегрева использует бит 0x01 поля A3 сообщения 0a00 A2345. Данные старше 45 секунд или отсутствующее поле отображаются как неизвестные. Это флаг защиты, а не числовая температура. Расшифровка основана на неофициальной карте anker-solix-api; реальный перегрев искусственно не вызывался.
+
+Charts support arbitrary selection, wheel/pinch zoom, trackpad panning, zoom buttons and reset. All charts and statistics reload detailed measurements for the selected range. The overheat indicator reads the A2345 protection flag; missing or stale telemetry is unknown, not a confirmed safe temperature.

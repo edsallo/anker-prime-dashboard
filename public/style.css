@@ -60,3 +60,5 @@ main{padding:20px 24px 16px}
 main{padding-bottom:24px}@media(max-width:600px){main{padding-bottom:16px}}
 
 .language-setting{margin:0 0 18px}.language-setting select{max-width:230px}header>.language-setting{margin:0;font-size:12px;gap:8px}header>.language-setting select{width:auto}
+
+.thermal-state{font-size:12px;color:var(--muted);grid-column:1/-1;margin-top:4px}.thermal-state.overheating{color:#b92323;background:#ffe6e3;border:1px solid #d34d42;padding:7px 10px;border-radius:8px;font-weight:650}

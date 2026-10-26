@@ -15,7 +15,7 @@ function createServer(config,service,history){
     if(url.pathname==='/api/status')return send(200,service.status());
     if(url.pathname==='/api/overview')return send(200,service.overview());
     if(url.pathname==='/api/history/devices')return send(200,{devices:await history.devices()});
-    if(url.pathname==='/api/history')return send(200,await history.query(url.searchParams.get('device'),url.searchParams.get('port'),Number(url.searchParams.get('hours'))));
+    if(url.pathname==='/api/history')return send(200,await history.query(url.searchParams.get('device'),url.searchParams.get('port'),Number(url.searchParams.get('hours')),Date.now(),url.searchParams.has('from')||url.searchParams.has('to')?{from:Number(url.searchParams.get('from')),to:Number(url.searchParams.get('to'))}:null));
    }
    if(req.method!=='POST'||!['/api/login','/api/control'].includes(url.pathname))return send(404,{error:'Not found'});
    if(!origins.has(req.headers.origin)||req.headers['x-anker-request']!=='1'||!req.headers['content-type']?.startsWith('application/json'))return send(403,{error:'Request denied'});
